@@ -46,3 +46,8 @@ function desencriptar(stringDesencritada){
     }
     return stringDesencritada
 }
+
+function btmCopiar(){
+    mensaje.select()
+    document.execCommand("copy")
+}
