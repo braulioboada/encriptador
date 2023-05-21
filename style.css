@@ -25,6 +25,7 @@ main{
     margin-top: 90px;
     margin-bottom: 85px;
     text-transform: lowercase;
+    resize: none;
 }
 ::placeholder { color: #0a3871;}
     .text-area:focus {
@@ -35,6 +36,7 @@ main{
     background: white;
     background-image: url(./imagenes/Muñeco.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 400px;
     height: 944px;
     left: 1000px;
@@ -43,6 +45,7 @@ main{
     border-radius: 32px;
     color: #0a3871;
     position:absolute;
+    resize: none;
 }
 .mensaje:focus {
     outline: none;
