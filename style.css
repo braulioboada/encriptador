@@ -10,7 +10,7 @@
 .logo{
     padding-top: 10px;
     margin-left: 10px;
-    width: 10%;
+    width: 15%;
 }
 
 main{
@@ -23,6 +23,7 @@ main{
     border: none;
     color: #0a3871;
     margin-top: 90px;
+    margin-bottom: 85px;
     text-transform: lowercase;
 }
 ::placeholder { color: #0a3871;}
@@ -59,7 +60,7 @@ main{
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 30px;
+    margin-left: 60px;
     width: 328px;
 }
 .btn-encriptar {
@@ -69,6 +70,7 @@ main{
     color: white;
     cursor: pointer;
     height: 67px;
+    margin-left: 30px;
     width: 328px;
 }
 
@@ -78,9 +80,11 @@ main{
     color: #0a3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
+    margin-left: 0;
     margin-top: 402px;
     position: absolute;
+    top:465px;
+    left: 1035px;
     width: 336px;
 }
 
