@@ -1,12 +1,12 @@
 *{
-    background: #F3F5FC;
+    background: #000000;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     width: 960px;
 }
-
+/*#F3F5FC*/
 .logo{
     padding-top: 10px;
     margin-left: 10px;
@@ -33,11 +33,6 @@ main{
     }
 
 .mensaje {
-    background: white;
-    background-image: url(./imagenes/Muñeco.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
     width: 400px;
     height: 944px;
     left: 1000px;
@@ -48,6 +43,11 @@ main{
     position:absolute;
     resize: none;
 }
+.tituloMensaje{
+    text-align: center;
+    font-style: inherit;
+}
+
 .mensaje:focus {
     outline: none;
 }
@@ -95,4 +95,10 @@ main{
 .informacion {
     color: #495057;
     font-size: 18px;
+}
+footer{
+    text-align: center;
+    font-size: 2px;
+    align-items: center;
+    gap: 1rem;
 }
