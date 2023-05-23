@@ -37,6 +37,7 @@ main{
     background-image: url(./imagenes/Muñeco.png);
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
     width: 400px;
     height: 944px;
     left: 1000px;
