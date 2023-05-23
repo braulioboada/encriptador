@@ -12,6 +12,7 @@ function btmEncriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
     mensaje.style.backgroundImage = "none"
+    btmCopiar
 }
 
 
