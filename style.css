@@ -1,18 +1,201 @@
 *{
-    background: #000000;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    width: 960px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#F3F5FC ;
 }
 /*#F3F5FC*/
 .logo{
     padding-top: 10px;
     margin-left: 10px;
-    width: 15%;
+    width: 10%;
 }
 
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.text-area {
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 5%;
+    top: 5%;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color:#F3F5FC;
+    resize: none;
+}
+::placeholder { color: #0a3871;}
+    .text-area:focus {
+        outline: none;
+    }
+.informacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 70%;
+    font-family: 'Inter';
+    color: #495057;
+    flex: none;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 18px;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 72%;
+}
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+.info h2{
+    width: 60%;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    color:#343a40;
+}
+.info p{
+    width: 80%;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.resultado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+.btn-copiar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5%;
+    gap: 8px;
+    width: 70%;
+    height: 12%;
+    left: 15%;
+    top: 80%;
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+    position: absolute;
+}
+.mensaje {
+    width: 100%;
+    height: 100%;
+    left: 1000px;
+    border: none;
+    border-radius: 32px;
+    color: #0a3871;
+    position:absolute;
+    resize: none;
+}
+
+footer{
+    font-family: "inter";
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+}
+/*
 main{
     display: flex;
     margin-bottom: 50px;
@@ -101,4 +284,4 @@ footer{
     font-size: 2px;
     align-items: center;
     gap: 1rem;
-}
+}*/
