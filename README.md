@@ -2,12 +2,6 @@
 challenge N° 1 - Encriptador alura
 
 
-esta en contruccion
+Primera Version lista
 
-funcionalidad de botones de encriptar, desencriptar y copiar listos
-
-diseño con css armado falta terminar de estilizar
-
-funcionalidad de textarea de encriptación y desencriptar listo
-
-funcionalidad de textarea responsiva lista 
+![primera version encriptador](https://github.com/braulioboada/encriptador/assets/133003669/b67c06d3-dbe4-460b-9486-945a95d526ad)
