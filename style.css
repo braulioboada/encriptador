@@ -1,11 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
-    background:#F3F5FC ;
+    background:#F3F5FC;
 }
-/*#F3F5FC*/
 .logo{
     padding-top: 10px;
     margin-left: 10px;
@@ -15,9 +15,9 @@ body{
 main{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
-.text-area {
+#input {
     position: absolute;
     width: 42%;
     height: 60%;
@@ -33,7 +33,7 @@ main{
     resize: none;
 }
 ::placeholder { color: #0a3871;}
-    .text-area:focus {
+    #input:focus {
         outline: none;
     }
 .informacion {
@@ -59,9 +59,9 @@ main{
     position: absolute;
     width: 80%;
     left: 5%;
-    top: 72%;
+    top: 78%;
 }
-.btn-encriptar {
+#btn-encriptar {
     align-items: center;
     justify-content: center;
     padding: 2%;
@@ -70,6 +70,7 @@ main{
     background-color: #0a3871;
     border: 1px solid #0a3871;
     border-radius: 24px;
+    margin-right: 40px;
     font-family: "inter";
     font-size: 18px;
     line-height: 19px;
@@ -77,7 +78,7 @@ main{
     color: white;
     cursor: pointer;
 }
-.btn-desencriptar {
+#btn-desencriptar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -97,35 +98,52 @@ main{
     color: #0a3871;
     cursor: pointer;
 }
-.btn-encriptar:hover, .btn-desencriptar:hover{
-    margin: 0.3%;
-    width: 24.5%;
-    padding: 1.8%;
+#btn-copiar {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6%;
+    gap: 8px;
+    width: 70%;
+    height: 14%;
+    left: 20%;
+    top: 85%;
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    cursor: pointer;
+    position: absolute;
+}
+#btn-encriptar:hover, #btn-desencriptar:hover, #btn-copiar:hover{
+    transform: scale(1.1);
 }
 
 .resultado {
-    display: flex;
+    display: block;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 30%;
-    height: 90%;
+    height: 95%;
     left: 60%;
-    top: 5%;
+    top: 2.5%;
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-    gap: 16px;
-    position: absolute;
-    width: 100%;
-    top: 65%;
     text-align: center;
+    float: left;
+}
+info{
+    padding: 1%;
+    width: auto;
+    height: 80%;
+    border: none;
 }
 .info h2{
     width: 60%;
@@ -136,6 +154,8 @@ main{
     line-height: 120%;
     text-align: center;
     color:#343a40;
+    margin-left: 20%;
+    margin-top: 4%;
 }
 .info p{
     width: 80%;
@@ -146,47 +166,30 @@ main{
     line-height: 150%;
     text-align: center;
     color: #495057;
+    margin-left: 10%;
+    margin-top: 4%;
 }
 .resultado img{
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    top: 15%;
+    margin-top: 20%;
+    width: 60%;
+    height: 40%;
 }
 
-.btn-copiar {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 5%;
-    gap: 8px;
-    width: 70%;
-    height: 12%;
-    left: 15%;
-    top: 80%;
-    background-color: #D8DFE8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
-    color: #0a3871;
-    cursor: pointer;
-    position: absolute;
-}
 .mensaje {
     width: 100%;
     height: 100%;
-    left: 1000px;
     border: none;
     border-radius: 32px;
     color: #0a3871;
+    display: flex;
     position:absolute;
+    text-align:justify;
     resize: none;
+    font-size: 22px;
+    padding: 20px;
+}
+#resultadoMensaje{
+    display: none;
 }
 
 footer{
@@ -194,94 +197,8 @@ footer{
     text-align: center;
     font-size: 15px;
     align-items: center;
+    margin-top: 10px;
 }
-/*
-main{
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+footer span {
+	font-weight: 700;
 }
-
-.text-area {
-    border: none;
-    color: #0a3871;
-    margin-top: 90px;
-    margin-bottom: 85px;
-    text-transform: lowercase;
-    resize: none;
-}
-::placeholder { color: #0a3871;}
-    .text-area:focus {
-        outline: none;
-    }
-
-.mensaje {
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-    border: none;
-    border-radius: 32px;
-    color: #0a3871;
-    position:absolute;
-    resize: none;
-}
-.tituloMensaje{
-    text-align: center;
-    font-style: inherit;
-}
-
-.mensaje:focus {
-    outline: none;
-}
-
-.botones {
-    display: flex;
-    margin-top: 18px;
-}
-
-.btn-desencriptar {
-    background-color: #D8DFE8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: #0a3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 60px;
-    width: 328px;
-}
-.btn-encriptar {
-    background-color: #0a3871;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: white;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-}
-
-.btn-copiar {
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    color: #0a3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left: 0;
-    margin-top: 402px;
-    position: absolute;
-    top:465px;
-    left: 1035px;
-    width: 336px;
-}
-
-.informacion {
-    color: #495057;
-    font-size: 18px;
-}
-footer{
-    text-align: center;
-    font-size: 2px;
-    align-items: center;
-    gap: 1rem;
-}*/
